@@ -158,6 +158,36 @@ Test the change under Wokrer1. Notice that you can now add a folder within the W
 <br />
 <br />
 
+
+<h2>Creating a Hidden Folder:</h2>
+On the DC machine, go to your C: directory and create a folder called "You_can't_see_me": <br/>
+<img src="https://imagizer.imageshack.com/img923/3271/jyBxE4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Go to the folder's settings. Open the Sharing tab, click Advanced Sharing and select Share this Folder. For Share name, change the name to "You_can't_see_me$": <br/>
+<img src="https://imagizer.imageshack.com/img922/3330/FnSlZD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Click Permissions and ensure Allow is checked for Full Control. Click Apply and OK: <br/>
+<img src="https://imagizer.imageshack.com/img922/5564/zpsg2a.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Enter the You_can't_see_me folder and create a new text file: <br/>
+<img src="https://imagizer.imageshack.com/img922/232/m4Me4q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Log in as the Wokrer1 user and verify that the folder appears from the shared folder. Open the Run window and type \\server1. Make sure the hidden folder does not appear in the share path: <br/>
+<img src="https://imagizer.imageshack.com/img922/543/v0hAbw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Try using the Run window to access \\server1\You_can't_see_me$ again to verify the folder's content exists: <br/>
+<img src="https://imagizer.imageshack.com/img923/5211/e2LXHu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Note that the content is seen: <br/>
+<img src="https://imagizer.imageshack.com/img924/589/1xrihQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 <!--
  ```diff
 - text in red
